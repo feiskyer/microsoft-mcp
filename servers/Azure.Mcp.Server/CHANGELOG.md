@@ -9,6 +9,7 @@ The Azure MCP Server updates automatically by default whenever a new release com
 - Added support for Azure Event Grid operations: [[#43](https://github.com/microsoft/mcp/pull/43)]
   - `azmcp_eventgrid_topic_list` - List all Event Grid topics in a subscription.
 - Added support for retrieving knowledge index schema information in Azure AI Foundry projects via the command `azmcp_foundry_knowledge_index_schema`. This command provides detailed schema configuration including field definitions, data types, and searchable attributes for specific knowledge indexes.
+- Added nodepool list tool for AKS managed cluster: [[#360](https://github.com/microsoft/mcp/pull/360)]
 
 ### Breaking Changes
 
@@ -61,7 +62,7 @@ AOT- Added a verb to the namespace name for bestpractices [[#109](https://github
 
 #### Dependency Updates
 
-- Updated the following dependencies to improve .NET Ahead-of-Time (AOT) compilation support: 
+- Updated the following dependencies to improve .NET Ahead-of-Time (AOT) compilation support:
   - Microsoft.Azure.Cosmos `3.51.0` → Microsoft.Azure.Cosmos.Aot `0.1.1-preview.1`. [[#37](https://github.com/microsoft/mcp/pull/37)]
 
 ## 0.5.8 (2025-08-21)
