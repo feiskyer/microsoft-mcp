@@ -54,6 +54,7 @@ The Azure MCP Server supercharges your agents with Azure context. Here are some 
 * "List my AKS clusters in my subscription"
 * "Show me all my Azure Kubernetes Service clusters"
 * "List the node pools for my AKS cluster 'my-aks-cluster' in the 'my-resource-group' resource group"
+* "Get details for the node pool 'np1' of my AKS cluster 'my-aks-cluster' in 'my-resource-group' resource group"
 
 ### 📊 Azure Cosmos DB
 

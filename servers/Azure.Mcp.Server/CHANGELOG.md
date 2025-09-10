@@ -10,6 +10,7 @@ The Azure MCP Server updates automatically by default whenever a new release com
   - `azmcp_eventgrid_topic_list` - List all Event Grid topics in a subscription.
 - Added support for retrieving knowledge index schema information in Azure AI Foundry projects via the command `azmcp_foundry_knowledge_index_schema`. This command provides detailed schema configuration including field definitions, data types, and searchable attributes for specific knowledge indexes.
 - Added nodepool list tool for AKS managed cluster: [[#360](https://github.com/microsoft/mcp/pull/360)]
+- Added nodepool get tool for AKS managed cluster: [[#???](https://github.com/microsoft/mcp/pull/???)]
 
 ### Breaking Changes
 
