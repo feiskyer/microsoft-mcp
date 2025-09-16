@@ -34,4 +34,12 @@ public interface IAksService
         string nodePoolName,
         string? tenant = null,
         RetryPolicyOptions? retryPolicy = null);
+
+    Task<string> GetClusterNetworkResource(
+        string subscription,
+        string resourceGroup,
+        string clusterName,
+        string resourceType,
+        string? tenant = null,
+        RetryPolicyOptions? retryPolicy = null);
 }

@@ -35,6 +35,7 @@ public class AksSetup : IAreaSetup
         // Register AKS commands
         cluster.AddCommand("list", new ClusterListCommand(loggerFactory.CreateLogger<ClusterListCommand>()));
         cluster.AddCommand("get", new ClusterGetCommand(loggerFactory.CreateLogger<ClusterGetCommand>()));
+        cluster.AddCommand("get-network-resource", new ClusterGetNetworkResourceCommand(loggerFactory.CreateLogger<ClusterGetNetworkResourceCommand>()));
         nodepool.AddCommand("list", new NodepoolListCommand(loggerFactory.CreateLogger<NodepoolListCommand>()));
         nodepool.AddCommand("get", new NodepoolGetCommand(loggerFactory.CreateLogger<NodepoolGetCommand>()));
     }

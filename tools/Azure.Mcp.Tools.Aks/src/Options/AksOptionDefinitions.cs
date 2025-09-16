@@ -7,6 +7,7 @@ public static class AksOptionDefinitions
 {
     public const string ClusterName = "cluster";
     public const string NodepoolName = "nodepool";
+    public const string ResourceTypeName = "resource-type";
 
     public static readonly Option<string> Cluster = new(
         $"--{ClusterName}"
@@ -21,6 +22,14 @@ public static class AksOptionDefinitions
     )
     {
         Description = "AKS node pool (agent pool) name.",
+        Required = true
+    };
+
+    public static readonly Option<string> ResourceType = new(
+        $"--{ResourceTypeName}"
+    )
+    {
+        Description = "Network resource type to query: all, vnet, nsg, route_table, subnet, load_balancer, private_endpoint.",
         Required = true
     };
 }

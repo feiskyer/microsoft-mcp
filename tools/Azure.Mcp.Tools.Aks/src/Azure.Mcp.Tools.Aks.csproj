@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <IsAotCompatible>true</IsAotCompatible>
+    <NoWarn>$(NoWarn);IL2026;IL3050</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="**\Resources\*.txt" />
@@ -12,7 +13,9 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Azure.ResourceManager" />
+    <PackageReference Include="Azure.ResourceManager.Resources" />
     <PackageReference Include="Azure.ResourceManager.ContainerService" />
+    <PackageReference Include="Azure.ResourceManager.Network" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
     <PackageReference Include="ModelContextProtocol" />
     <PackageReference Include="System.CommandLine" />
